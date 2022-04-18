@@ -38,6 +38,7 @@ public class BankAccount {
 
     public void deposit(int depositAmount){
         actBalance +=  depositAmount;
+        /* after deposit, store deposit details */
 
     }
     public void withdraw(int withdrawAmount){
