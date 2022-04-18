@@ -42,8 +42,12 @@ public class BankAccount {
     }
     public void withdraw(int withdrawAmount){
     if (actBalance > withdrawAmount) {
-//        throw new InsufficientBalanceException();
+        try {
+            throw new InsufficientBalanceException();
+        } catch (InsufficientBalanceException e) {
+            e.printStackTrace();
         }
+    }
 
 
         actBalance -= withdrawAmount;
