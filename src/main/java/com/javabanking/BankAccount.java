@@ -56,7 +56,7 @@ public class BankAccount {
         Random r = new Random();
         Transaction t = new Transaction(r.nextInt(),
                 actNumber, withdrawAmount, "withdraw", actBalance);
-    if (actBalance > withdrawAmount) {
+    if (actBalance < withdrawAmount) {
         try {
             throw new InsufficientBalanceException();
         } catch (InsufficientBalanceException e) {

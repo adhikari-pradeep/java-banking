@@ -11,7 +11,7 @@ public class TransactionDetails {
         transactionList.add(t);
     }
 
-    public void showStatement(int actNumber){
+    public static void showStatement(int actNumber){
         System.out.println("statement for account numbe : "+ actNumber);
         System.out.println("---------------------------");
         for (Transaction t : transactionList) {
